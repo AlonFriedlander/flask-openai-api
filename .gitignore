@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+
+# Flask/SQLAlchemy/migrations
+instance/
+migrations/versions/
+
+# Flask-SQLAlchemy
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Alembic files (only include migration scripts, ignore database files)
+alembic.ini
+
+# VSCode and PyCharm project files
+.vscode/
+.idea/
+
+# macOS files
+.DS_Store
+
+# Python pip files
+*.egg-info/
+.eggs/
+
+# Docker (if used)
+*.dockerfile
+docker-compose.yml
+
