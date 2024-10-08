@@ -1,6 +1,7 @@
 import openai
 from flask import current_app
 
+
 def get_openai_answer(question):
     """Interact with OpenAI to get an answer for the given question."""
     openai.api_key = current_app.config['OPENAI_API_KEY']

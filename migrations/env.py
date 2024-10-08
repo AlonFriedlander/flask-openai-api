@@ -1,5 +1,5 @@
 from logging.config import fileConfig
-
+import os
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
@@ -24,7 +24,10 @@ from app.models import db  # Import the SQLAlchemy instance
 
 target_metadata = db.metadata  # Attach the MetaData object
 
-
+# Get the database URL from the environment or fallback to config
+DATABASE_URL = os.getenv("DATABASE_URL")
+if DATABASE_URL:
+    config.set_main_option('sqlalchemy.url', DATABASE_URL)
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
 # my_important_option = config.get_main_option("my_important_option")
