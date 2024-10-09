@@ -42,7 +42,7 @@ def test_ask_endpoint(client):
     """
     # Simulating a POST request to the /api/ask endpoint
     response = client.post('/api/ask', json={
-        'question': 'Messi or Ronaldo?'
+        'question': 'What is the meaning of life?'
     })
 
     # Ensure the request was successful (status code 200)
