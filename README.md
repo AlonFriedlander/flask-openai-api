@@ -43,6 +43,10 @@ docker-compose up
 docker-compose --profile test run test
 ```
 
+### Migrations
+Database schema changes are managed by Alembic, and migrations are applied automatically when the containers are started. You don't need to manually run migration commands.
+
+
 ### API Details
 - **POST** `http://127.0.0.1:5000/api/ask`: This endpoint accepts a JSON payload with a question field. The API retrieves the answer from OpenAI, stores the question and answer in the database, and returns the result as a JSON response.
 **Example Request:**
