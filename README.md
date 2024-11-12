@@ -1,9 +1,9 @@
-# Flask-OpenAI API Project Home Assignment
+# Flask-OpenAI API Project
 
 #### Author: **Alon Friedlander**
 ***
 ## Project Overview
-This project was developed as part of a backend-focused home assignment. It demonstrates integration with OpenAI’s API to handle user queries, returning answers that are stored in a PostgreSQL database. The project includes Flask for the server, PostgreSQL for database storage, Alembic for database migrations, and pytest for testing. Docker and Docker Compose are used to containerize the application, ensuring ease of deployment and environment consistency.
+This project demonstrates integration with OpenAI’s API to handle user queries, returning answers that are stored in a PostgreSQL database. The project includes Flask for the server, PostgreSQL for database storage, Alembic for database migrations, and pytest for testing. Docker and Docker Compose are used to containerize the application, ensuring ease of deployment and environment consistency.
 ### Tasks Completed
 - **Flask Server**: Set up a Flask server to handle user questions through a POST endpoint /api/ask.
 - **OpenAI Integration**: Integrated OpenAI’s API to get answers for user-provided questions.
